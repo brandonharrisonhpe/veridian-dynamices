@@ -1,0 +1,7 @@
+{{ with secret "database/creds/my-role" }}
+{
+  "username": "{{ .Data.username }}",
+  "password": "{{ .Data.password }}",
+  "hostname": "terraform-20200206070707761900000005.c6kkrfyy5ys7.us-east-1.rds.amazonaws.com"
+}
+{{ end }}
